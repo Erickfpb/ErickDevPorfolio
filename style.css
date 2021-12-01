@@ -500,9 +500,9 @@ display: none;
     background-color: white;
     max-height: 600px;
     width: 90vw;
-    height: 25vh;
+    height: 18vh;
     margin: 5vh 5vw;
-    padding: 5vh;
+    padding: 2vh;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
@@ -510,7 +510,8 @@ display: none;
     max-width: 1000px;
 }
 .contact-img{
-    width: vw;
+    width: 15vw;
+    margin: 0vh 2vw;
     max-height: 100px;
     height: auto;
     display: flex;
@@ -527,4 +528,6 @@ display: none;
 .contact-link{
     color: black;
     text-align:center ;
+    font-size: small;
+    text-overflow: clip;
 }
