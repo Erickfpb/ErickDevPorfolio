@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:description" 
+  content="Sean Connery found fame and fortune as the
+           suave, sophisticated British agent, James Bond." />
+    <!--fonts-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap');
+    </style>
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
+    <!--custom CSS-->
+    <link rel="stylesheet" href="style.css"> 
+    <title>Erick FPB Portfolio</title>
+
+</head>
+<body>
+
+
+
+
+
+
+
+
+<!--navigation-->
+<div class="topnav" id="myTopnav">
+    <span></span>
+    <a href="#">Menu</a>
+    <a href="#resume">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience1">Experience</a>
+    <a href="#skills1">Skills</a>
+    <a href="#contact">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+<script>
+    function myFunction() {
+        var element = document.getElementById("myTopnav");
+        element.classList.toggle("responsive");
+    }
+</script>
+
+
+
+
+
+
+
+
+    <!--home-->
+<div class="container-showcase">
+<img class="profile-img" src="DATA/20211023_101946.jpg">
+<h1>Erick Fernando Perez Barcenas</h1>
+        <p class="rainbow-text" >Fullstack Developer</p>
+        <a href="#resume" class="learn-more">Learn More</a>
+    </div>
+
+
+
+
+
+
+
+    <!--Resume-->
+    <div class="container-resume" id="resume">
+
+        <h2 class="resume-title"> About Me</h2>
+        <p class="resume-text">As a web developer, I have a good knowledge of React, JavaScript, Node and SQL, with other tools and libraries that, combined with my communication and problem-solving skills, I think I would be an excellent candidate for a Web Developer role at your company.</p>
+        <div class="info-container">
+            <div class="basic-info">
+                <ul class="ul2">
+                    <li>
+                        <p>Erick Fernando Perez Barcenas</p>
+                    </li>
+                    <li>
+                        <p>25 Years old, Single</p>
+                    </li>
+                    <li>
+                        <p>University degree: Direction and Development of Organizations</p>
+                    </li>
+                    <li>
+                        <p>Mexico, Puebla</p>
+                    </li>
+                    <li>
+                        <p>Languages: Spanish, English, Deustch, Japanese</p>
+                    </li>
+                    <li>
+                        <p>Able to travel/change residence, </p>
+                    </li>
+                    <li>
+                        <p>Likes hot coffee, reading fantasy books, playing videogames, investigating about physics data </p>
+                    </li>
+                    <li>
+                        <p>Interested in enviroments where I can grow intelectual and social aspects.</p>
+                    </li>
+                </ul>
+                <br>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+<!--Projects-->
+    <div class="projects" id="projects">
+        <h2 class="projects-title" >Projects</h2>
+        <div class="projects-text">       
+            <p>I have been working on diferent personal projects to increase the efficiency of my skills as a developer.<br> Here you will find some of them that went live.
+            </p>
+        </div>
+
+        <div class="container-images">
+            <div class="images-container-project">
+                <img src="DATA/nekofriends.png" alt="nekoimage" class="image-project">
+                <h3 class="img-title-p">Nekofriends</h3>
+                <div class="read-more-content">
+                    <p>
+                        <a class="btn btn-secondary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                          Read More
+                        </a>
+                        <a href="https://erickfpb.github.io/Nekopals/" target="_blank" class="btn">See Live</a>
+                    </p>
+                      <div class="collapse" id="collapseExample">
+                        <div class="card card-body blktext">
+                            This is a React Hooks app that I created to show Virtual Dom manipulation.
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="images-container-project">
+                <img src="DATA/faceapi.png" alt="image 1" class="image-project">
+                <h3 class="img-title-p">Face Detection</h3>
+                <div class="read-more-content">
+                    <p>
+                        <a class="btn btn-secondary" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                          Read More
+                        </a>
+                        <a href="https://face-recognitions-api.herokuapp.com/" target="_blank" class="btn">See Live</a>
+                    </p>
+                      <div class="collapse" id="collapseExample2">
+                        <div class="card card-body blktext">
+                            This is a React JS based Web App that I created with the use of PostgresSQL backend database and an API to detect faces by giving it an image.
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="images-container-project">
+                <img src="DATA/bkggenerator.png" alt="image 1" class="image-project">
+                <h3 class="img-title-p">Css Background Generator</h3>
+                <div class="read-more-content">
+                    <p>
+                        <a class="btn btn-secondary" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
+                          Read More
+                        </a>
+                        <a href="https://erickfpb.github.io/BackgroundGenerator/" target="_blank" class="btn">See Live</a>
+                    </p>
+                      <div class="collapse" id="collapseExample3">
+                        <div class="card card-body blktext">
+                            This is an App that is made to show the DOM control, also to generate an easy css back ground code generator.
+                        </div>
+                      </div>
+                </div>
+            </div> 
+            <div class="images-container-project">
+                <img src="DATA/portfolio.png" alt="image 1" class="image-project">
+                <h3 class="img-title-p">Lorem, ipsum dolor.</h3>
+                <div class="read-more-content">
+                    <p>
+                        <a class="btn btn-secondary" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">
+                          Read More
+                        </a>
+                        <a href="#" target="_blank" class="btn">See Live</a>
+                    </p>
+                      <div class="collapse" id="collapseExample4">
+                        <div class="card card-body blktext">
+                            I take this page as a project, since this also requires UI design and responsiveness, plus the little javascript features that it involves, made by myself
+                        </div>
+                      </div>
+                </div>
+            </div>     
+        </div>
+    </div>    
+
+
+
+
+
+
+
+<!--Experience-->
+<div class="experience" id="experience1">
+        <h2 class="experience-title">Experience</h2>
+
+    <div class="experience-panel">
+        <img src="DATA/mexabat.jpg" alt="" class="image-experience">
+        <h3 class="experience-subtitle">MEXabat</h3>
+        <p class="experience-text">At MEXabat, i was the leader for the migration to the SCRUM methodology from the past system that they have to implement new projects, here, I was able to engage and develope a lot of experience and expertice in project management that i learned from my school degree. <br> Also, I was involved in the maintenance of the backend for the software SAP Finances. </p>
+    </div>
+    <div class="experience-panel">
+        <img src="DATA/SAT.png" alt="" class="image-experience">
+        <h3 class="experience-subtitle">SAT</h3>
+        <p class="experience-text">During my SAT working days, I found that having experience with clients that had troubles, was one of the best experieces that you can obtain, because you know that you are "their only hope" to get their trouble solved! <br> meaning that you understand that solving or delivering projects to your client, is the most important part of any job that you need to attend, also, you learn how to aproach and talk with clients.</p>
+    </div>
+    <div class="experience-panel">
+        <img src="DATA/fiverr.png" alt="" class="image-experience">
+        <h3 class="experience-subtitle">Freelance</h3>
+        <p class="experience-text">As a Freelancer, you can learn skills for Remote working, and by learning, I mean, applying a lot of skills! <br>That is because you dont have a boss, you dont get micro-managed, you dont get to have an schedule or many other information that make your life managing easy in job life. <br> by saying that, I want to remark, tha tduring my freelance working days, i have develop strong skills in delivering projects for people that are expencting really good results in no time!</p>
+    </div>
+    <a href="#contact"><p class="experience-link"> You can read more in my LinkedIn </p></a>
+</div>
+
+
+
+
+
+
+
+
+<!--Skills-->
+<div class="skills" id="skills1">
+    <h2 class="skills-title">Skills</h2>
+    <p class="skills-text">Here you will find some of the Languages of programming that i know and use</p>
+    <div class="skill1">
+        <div class="skills-panel">
+                <div class="logo">
+                    <img src="DATA/html.png" alt="image 1" class="skills-image">
+                    <h3 class="skills-subtitle">HTML</h3>
+                </div>
+                <div class="language-text">                
+                    <p class="skills-text-grid">Ofocurse I have to know this one like the palm of my hand.</p>
+                    <hr class="hr-grid">
+                    <p class="skills-text-grid">Years: 3</p>
+                </div>
+        </div>
+    </div>
+
+    <div class="skill2">
+        <div class="skills-panel">
+            <div class="logo">
+                <img src="DATA/CSS-Logo.png" alt="image 1" class="skills-image">
+                <h3 class="skills-subtitle">css</h3>
+            </div>
+            <div class="language-text">                
+                <p class="skills-text-grid">I think this is one of my strong skills, because care too much about the UI/X and responsiveness-</p>
+                <hr class="hr-grid">
+                <p class="skills-text-grid">Years: 2 - Main language</p>
+            </div>
+        </div>
+    </div>
+    <div class="skill3">
+        <div class="skills-panel">
+            <div class="logo">
+                <img src="DATA/reactjs.png" alt="image 1" class="skills-image">
+                <h3 class="skills-subtitle">React</h3>
+            </div>
+            <div class="language-text">                
+                <p class="skills-text-grid">I love react, it makes the front end work nice and read easy, i think this is one of my best languages to this day</p>
+                <hr class="hr-grid">
+                <p class="skills-text-grid">Years: 2 - Main language</p>
+            </div>
+        </div>
+    </div>
+    <div class="skill4">
+        <div class="skills-panel">
+            <div class="logo">
+                <img src="DATA/js.png" alt="image 1" class="skills-image">
+                <h3 class="skills-subtitle">Javascript</h3>
+            </div>
+            <div class="language-text">                
+                <p class="skills-text-grid">If you know react, ofcourse you should have a good knowledge of Javascript!</p>
+                <hr class="hr-grid">
+                <p class="skills-text-grid">Years: 2 - Main language</p>
+            </div>
+        </div>
+    </div>
+    <div class="skill5">
+        <div class="skills-panel">
+            <div class="logo">
+                <img src="DATA/nodejs.png" alt="image 1" class="skills-image">
+                <h3 class="skills-subtitle">Node.JS</h3>
+            </div>
+            <div class="language-text">                
+                <p class="skills-text-grid">I knwo node.js becuase i like to know how the front end is going to work with the back end.</p>
+                <hr class="hr-grid">
+                <p class="skills-text-grid">Years: 1</p>
+            </div>
+        </div>
+    </div>
+    <div class="skill6">
+        <div class="skills-panel">
+            <div class="logo">
+                <img src="DATA/postgres.png" alt="image 1" class="skills-image">
+                <h3 class="skills-subtitle">PostgresSQL</h3>
+            </div>
+            <div class="language-text">                
+                <p class="skills-text-grid">I know PostgresSQL because i want to be able to also work with the backend in order to make the web API work as easy as it can</p>
+                <hr class="hr-grid">
+                <p class="skills-text-grid">Years: 1</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="contact" id="contact">
+    <h2 class="contact-title"> Contact </h2>
+    <div class="contact-container">
+        <a href="https://www.linkedin.com/in/efpba/" class="contact-link"><img  src="/DATA/in.png" class="contact-img" alt=""> Linkedin</a>
+        <a href="https://www.instagram.com/baskerville_perez" class="contact-link"><img  src="/DATA/instagram.png" class="contact-img" alt="">Instagram</a>
+        <a  class="contact-link"><img  src="/DATA/whatsapp.png" class="contact-img" alt="">2221147044</a>
+        <a  class="contact-link"><img  src="/DATA/outlook.png" class="contact-img" alt="">erick_fpb@hotmail.com</a>
+    </div>
+    <p class="rainbow-text">Developed by Erick Fernando Perez Barcenas</p>
+
+</div>
+
+
+
+
+
+</body>
+</html>
+
+
