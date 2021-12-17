@@ -10,6 +10,9 @@ body{
     font-size: 16px;
     font-family: 'Oswald', sans-serif;
 }
+body.active{
+    background-color: black;
+}
 
 a {
     color: #ffffff;
@@ -36,6 +39,9 @@ background-color: rgb(0, 0, 0);
 overflow: hidden;
 height: 53px;
 transition: height 0.5s;
+position: -webkit-sticky;
+position: sticky;
+top: 0px;
 }
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -60,10 +66,20 @@ color: white;
 transition: display 1s;
 display: block;
 }
+.buttondark{
+    margin-top: 1.6vh ;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    margin-left:4vw ;
+    margin-right: 0;
+    color: white;
+}
+
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
 display: none;
 }
+
 /* When the screen is less than 800 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 800px) {
     .topnav a:not(:first-child) {
@@ -79,9 +95,11 @@ display: none;
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 800px) {
     .topnav.responsive {
-        position: relative;
+        position: -webkit-sticky;
+position: sticky;
+top: 0px;
         transition: height 0.5s;
-        height: 318px;
+        height: 375px;
     }
     .topnav.responsive a.icon {
         position: absolute;
@@ -141,6 +159,15 @@ display: none;
     text-align: center;
     font-size: 25px;
 }
+.container-showcase.active{
+    background-color: black;
+}
+.name{
+    color: black;
+}
+body.active .name{
+    color: white;
+}
 .learn-more{
     color: gray;
     font-size: medium;
@@ -150,6 +177,9 @@ display: none;
 .learn-more:hover {
     transform: scale(1.5);
     color: black;
+}
+body.active .learn-more:hover{
+    color: white;
 }
 
 
@@ -215,9 +245,11 @@ display: none;
 
 /*Projects section*/
 .projects{
-    background-color: white;
     min-height: 100vh;
     padding: 5vh 0px;
+}
+body.active .projects{
+    color: white;
 }
 .projects-title {
     display: flex;
@@ -269,6 +301,9 @@ display: none;
     border-radius: 10px;
     width: 80vw;
     max-width: 950px;
+}
+body.active .images-container-project{
+    border: rgba(128, 128, 128, 0.425) 2px solid;
 }
 @media screen and (max-width: 800px) {
         .images-container-project{
@@ -331,6 +366,12 @@ display: none;
     margin: auto ;
     font-size: larger;
     margin-top: 5vh;
+    transition: transform 0.5s;
+}
+.experience-link:hover{
+    color: white;
+    transform: scale(1.1);
+
 }
 .experience-panel{
     display: flex;
@@ -382,7 +423,8 @@ display: none;
     padding: 5vh 0px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 10vh 20vh 17vh 17vh 17vh;
+    grid-template-rows: 10vh 20vh 20vh 20vh 20vh;
+    gap: 5vh;
 }
 @media screen and (max-width: 785px) {
     .skills{
@@ -391,6 +433,7 @@ display: none;
         display: flex;
         flex-direction: column;
         justify-items: center;
+        gap: 3vh;
     }
 }
 .skills-title{
@@ -403,6 +446,9 @@ display: none;
     justify-items: center;
     margin: auto; 
 }
+body.active .skills-title{
+    color: white;
+}
 .skills-text{
     grid-column: 1/3;
     grid-row: 2/2;
@@ -410,12 +456,15 @@ display: none;
     text-align: center;
     padding: 2vh 5vw;
 }
+body.active .skills-text{
+    color: white;
+}
 .skills-panel{
     color: white;
     background-color: black;
     display: grid;
     grid-template-columns: 15vw 1fr;
-    grid-template-rows: 15vh;
+    grid-template-rows: 20vh;
     margin: auto;
     width: 45vw;
     max-width: 600px;
@@ -423,13 +472,15 @@ display: none;
     max-height: 200px;
     border-radius: 10px;
 }
-
+body.active .skills-panel{
+    border: rgba(128, 128, 128, 0.425) 2px solid;
+}
 @media screen and (max-width: 785px) {
         .skills-panel {
         margin-bottom: 5vh;
         width: 80vw;
         grid-template-columns: 30vw 1fr;
-        grid-template-rows: 20vh;
+        grid-template-rows: 26vh;
     }
 }
 .logo{

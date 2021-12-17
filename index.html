@@ -20,7 +20,7 @@
     <title>Erick FPB Portfolio</title>
 
 </head>
-<body>
+<body id="dark">
 
 
 
@@ -38,17 +38,12 @@
     <a href="#experience1">Experience</a>
     <a href="#skills1">Skills</a>
     <a href="#contact">Contact</a>
+    <button class="buttondark" onclick="myFunctionDark()" id="darkMode" >Read mode</button>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
     </a>
 </div>
 
-<script>
-    function myFunction() {
-        var element = document.getElementById("myTopnav");
-        element.classList.toggle("responsive");
-    }
-</script>
 
 
 
@@ -56,11 +51,10 @@
 
 
 
-
-    <!--home-->
-<div class="container-showcase">
+<!--home-->
+<div class="container-showcase" >
 <img class="profile-img" src="DATA/20211023_101946.jpg">
-<h1>Erick Fernando Perez Barcenas</h1>
+<h1 class="name">Erick Fernando Perez Barcenas</h1>
         <p class="rainbow-text" >Fullstack Developer</p>
         <a href="#resume" class="learn-more">Learn More</a>
     </div>
@@ -254,7 +248,7 @@
 <!--Skills-->
 <div class="skills" id="skills1">
     <h2 class="skills-title">Skills</h2>
-    <p class="skills-text">Here you will find some of the Languages of programming that i know and use</p>
+    <p class="skills-text">Here you will find some of the Languages of programming that I know and use</p>
     <div class="skill1">
         <div class="skills-panel">
                 <div class="logo">
@@ -348,12 +342,9 @@
     <p class="rainbow-text">Developed by Erick Fernando Perez Barcenas</p>
 
 </div>
-
-
-
-
-
 </body>
+
+<script src="javascript.js"></script>
 </html>
 
 
